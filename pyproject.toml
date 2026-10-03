@@ -1,0 +1,22 @@
+[project]
+name = "codica-hello-world"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "SantiJoya", email = "santiandre@outlook.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "more-itertools>=11.1.0",
+]
+
+[project.scripts]
+codica-hello-world = "codica_hello_world:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["codica_hello_world"]
