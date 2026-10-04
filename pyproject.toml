@@ -8,7 +8,7 @@ authors = [
 ]
 requires-python = ">=3.14"
 dependencies = [
-    "more-itertools>=11.1.0",
+    "more-itertools>=10.5.0",
 ]
 
 [project.scripts]
@@ -20,3 +20,8 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["codica_hello_world"]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
